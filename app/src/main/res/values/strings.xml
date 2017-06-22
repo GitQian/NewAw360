@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">NewAw360</string>
+    <string name="factory_setting_title">工厂设置界面</string>
+    <string name="factory_front_id">前路摄像头id：</string>
+    <string name="factory_behind_id">后路摄像头id：</string>
+    <string name="factory_storage_select">视频存储路径：</string>
+    <string name="factory_app_auto">开机自启动：</string>
+
+
+
+    <string name="file_explorer_no_file">没有文件</string>
+    <string name="file_explorer_1234_mp4">1234.mp4</string>
+    <string name="file_explorer_unlock">解锁</string>
+    <string name="file_explorer_lock_video">紧急视屏</string>
+    <string name="file_explorer_front">前路视屏</string>
+    <string name="file_explorer_behind">后路视屏</string>
+    <string name="file_explorer_photo">图片</string>
+    <string name="all_select">全选</string>
+    <string name="inverse_select">反选</string>
+    <string name="delete">刪除</string>
+
+
+    <string name="setting_record_audio">录音</string>
+    <string name="setting_app_auto_run">应用开机自启动</string>
+    <string name="setting_general">通用设置</string>
+    <string name="setting_front">前摄像头</string>
+    <string name="setting_behind">后摄像头</string>
+    <string name="setting_water">视频水印</string>
+    <string name="setting_storage_select">文件存储盘符</string>
+    <string name="setting_solution">视频分辨率</string>
+    <string name="setting_lock_video_size">紧急保存时间设置</string>
+    <string name="setting_video_size">录制视频大小</string>
+    <string name="setting_old_record_auto">录制启动设置</string>
+    <string name="setting_record_auto">是否开机自动后台录制</string>
+    <string name="setting_vesion">版本信息：V_1.0</string>
+
+
+    <string name="confirm">确定</string>
+    <string name="videoplayer_00_00">00:00:00</string>
+    <string name="back">返回</string>
+</resources>

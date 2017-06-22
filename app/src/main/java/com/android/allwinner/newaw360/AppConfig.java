@@ -1,0 +1,98 @@
+package com.android.allwinner.newaw360;
+
+import com.android.allwinner.newaw360.utils.CommonUtils;
+import com.android.allwinner.newaw360.utils.SPUtils;
+
+import java.io.File;
+
+/**
+ * Created by Administrator on 2016/9/28.
+ */
+public class AppConfig {
+
+    //默认两路
+    public static final int CAMERA_AMOUNT = 2;
+
+    /***************
+     * 名义 id
+     ************/
+    //前路设备（数组下标-0）
+    public static final int FRONT_CAMERA = 0;
+    //后路设备
+    public static final int BEHIND_CAMERA = 1;
+    //左路设备
+    public static final int LEFT_CAMERA = 20;
+    //右路设备
+    public static final int RIGHT_CAMERA = 30;
+
+    /***************
+     * 真实 id
+     ****************/
+    public static int FRONT_CAMERA_INDEX = (int) SPUtils.get(MyApplication.getContext(), "KEY_FRONT_CAMERA_INDEX", 0);
+    public static int BEHIND_CAMERA_INDEX = (int) SPUtils.get(MyApplication.getContext(), "KEY_BEHIND_CAMERA_INDEX", 4);
+    ;
+    public static int LEFT_CAMERA_INDEX = 20;
+    public static int RIGHT_CAMERA_INDEX = 30;
+
+    // 硬件层的前后左右摄像头顺序 在Camera.open(id)对应id的值;
+    public static final int FRONT_CAMERA_DEV_INDEX = 0;
+
+    public static final int BEHIND_CAMERA_DEV_INDEX = 2;
+
+    public static final int LEFT_CAMERA_DEV_INDEX = 4;
+
+    public static final int RIGHT_CAMERA_DEV_INDEX = 5;
+
+
+    //文件路径
+    public static String ROOT_DIR = CommonUtils.getStoragePath();
+    public static String DVR_PATH = CommonUtils.getStoragePath() + File.separator + "Aw360";
+    public static String FRONT_VIDEO_PATH = DVR_PATH + "/front/";
+    public static String BEHIND_VIDEO_PATH = DVR_PATH + "/behind/";
+    public static String LEFT_VIDEO_PATH = DVR_PATH + "/left/";
+    public static String RIGHT_VIDEO_PATH = DVR_PATH + "/right/";
+    public static String PICTURE_PATH = DVR_PATH + "/picture/";
+
+    //录制时长
+    public static final int DEFAULT_MAX_DURATION = 1 * 60 * 1000;
+    public static final int ONE_MINUTE_DURATION = 1 * 60 * 1000;
+    public static final int THREE_MINUTE_DURATION = 2 * 60 * 1000;
+    public static final int FIVE_MINUTE_DURATION = 3 * 60 * 1000;
+
+    //SharedPreferences Key
+    public static final String KEY_IS_FRONT_SOUND = "isFrontSound";
+    public static final String KEY_IS_BEHIND_SOUND = "isBehindSound";
+    public static final String KEY_IS_FRONT_WATER = "isFrontWater";
+    public static final String KEY_IS_BEHIND_WATER = "isBehindWater";
+    public static final String KEY_IS_FRONT_AUTO = "isFrontAuto";
+    public static final String KEY_IS_BEHIND_AUTO = "isBehindAuto";
+
+    public static final String KEY_FRONT_SOLUTION_WHERE = "FrontSolutionWhere";
+    public static final String KEY_BEHIND_SOLUTION_WHERE = "BehindSolutionWhere";
+
+    public static final String KEY_STORAGE_WHERE = "StorageWhere";
+    public static final String KEY_STORAGE_PATH = "StoragePath";
+
+    public static final String KEY_APP_AUTO_RUN = "isAppAutoRun";
+
+    //应用&内核倒车开关
+    public static final String FILE_EXIT_HANDLE = "/sys/class/car_reverse/needexit";
+
+
+    //Handler Message
+    public static final int MSG_RECODE_STOP = 0;
+    public static final int MSG_RECODE_START = 1;
+    public static final int MSG_RECODE_COUNT = 2;
+
+    public static final int MSG_FRONT_CAMERA_IN = 6;
+    public static final int MSG_FRONT_CAMERA_OUT = 7;
+
+    public static final int MSG_BEHIND_CAMERA_IN = 12;
+    public static final int MSG_BEHIND_CAMERA_OUT = 13;
+
+    public static final int MSG_ACTIVITY_FUWEI = 266;
+
+    //预分配机制开关
+    public static final boolean IS_PREALLOCATE = false;
+
+}
