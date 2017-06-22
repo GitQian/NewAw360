@@ -7,11 +7,11 @@
     <string name="factory_app_auto">开机自启动：</string>
 
 
-
     <string name="file_explorer_no_file">没有文件</string>
     <string name="file_explorer_1234_mp4">1234.mp4</string>
     <string name="file_explorer_unlock">解锁</string>
     <string name="file_explorer_lock_video">紧急视屏</string>
+    <string name="file_explorer_video">视屏</string>
     <string name="file_explorer_front">前路视屏</string>
     <string name="file_explorer_behind">后路视屏</string>
     <string name="file_explorer_photo">图片</string>
@@ -23,6 +23,7 @@
     <string name="setting_record_audio">录音</string>
     <string name="setting_app_auto_run">应用开机自启动</string>
     <string name="setting_general">通用设置</string>
+    <string name="setting_camera">摄像头</string>
     <string name="setting_front">前摄像头</string>
     <string name="setting_behind">后摄像头</string>
     <string name="setting_water">视频水印</string>

@@ -44,7 +44,8 @@
             android:layout_width="240dp"
             android:layout_height="160dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true">
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
 
             <TextureView
                 android:id="@+id/ttv_camera_behind"

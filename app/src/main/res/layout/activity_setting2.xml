@@ -41,7 +41,7 @@
             android:background="@drawable/selector_filelist_lock"
             android:button="@null"
             android:gravity="center"
-            android:text="@string/setting_front"
+            android:text="@string/setting_camera"
             android:textColor="#ffffff"
             android:textSize="18sp" />
 
@@ -56,7 +56,8 @@
             android:gravity="center"
             android:text="@string/setting_behind"
             android:textColor="#ffffff"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:visibility="gone" />
 
     </RadioGroup>
 

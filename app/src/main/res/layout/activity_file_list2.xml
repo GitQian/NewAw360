@@ -40,7 +40,7 @@
             android:background="@drawable/selector_filelist_lock"
             android:button="@null"
             android:gravity="center"
-            android:text="@string/file_explorer_front"
+            android:text="@string/file_explorer_video"
             android:textColor="#ffffff"
             android:textSize="18sp" />
 
@@ -55,7 +55,8 @@
             android:gravity="center"
             android:text="@string/file_explorer_behind"
             android:textColor="#ffffff"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:visibility="gone" />
 
         <RadioButton
             android:id="@+id/rbtn_all_picture"
