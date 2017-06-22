@@ -28,7 +28,7 @@ public class AppConfig {
     /***************
      * 真实 id
      ****************/
-    public static int FRONT_CAMERA_INDEX = (int) SPUtils.get(MyApplication.getContext(), "KEY_FRONT_CAMERA_INDEX", 0);
+    public static int FRONT_CAMERA_INDEX = (int) SPUtils.get(MyApplication.getContext(), "KEY_FRONT_CAMERA_INDEX", 3);
     public static int BEHIND_CAMERA_INDEX = (int) SPUtils.get(MyApplication.getContext(), "KEY_BEHIND_CAMERA_INDEX", 4);
     ;
     public static int LEFT_CAMERA_INDEX = 20;
